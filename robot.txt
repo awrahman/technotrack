@@ -1,0 +1,23 @@
+# robots.txt for http://www.technotrack.com.bd/
+
+User-agent: *
+
+Disallow: /guest_customer_order/*
+	
+
+User-agent: Baiduspider
+Disallow: /guest_customer_order/*
+
+User-agent: HaoSouSpider
+Disallow: /guest_customer_order/*
+
+User-agent: Sogou web spider
+Disallow: /guest_customer_order/*
+
+User-agent: Sogou inst spider
+Disallow: /guest_customer_order/*
+
+User-agent: Sogou spider2
+Disallow: /guest_customer_order/*
+
+Sitemap: https://www.technotrack.com.bd/sitemap.xml

@@ -1,0 +1,108 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+RewriteCond %{HTTP_REFERER} !^http://admin.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://admin.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://arahman.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://arahman.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://billing.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://billing.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cart.marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cart.marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cdn.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cdn.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://technotrack-com-bd.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://technotrack-com-bd.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.admin.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.admin.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.arahman.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.arahman.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.billing.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.billing.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cart.marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cart.marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cdn.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cdn.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.technotrack-com-bd.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.technotrack-com-bd.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://admin.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://admin.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://arahman.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://arahman.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://billing.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://billing.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cart.marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cart.marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cdn.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cdn.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://technotrack-com-bd.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://technotrack-com-bd.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.admin.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.admin.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.arahman.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.arahman.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.billing.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.billing.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cart.marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cart.marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cdn.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cdn.technotrack.com.bd$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.marahman.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.marahman.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.technotrack-com-bd.paa.kst.mybluehost.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.technotrack-com-bd.paa.kst.mybluehost.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.technotrack.com.bd/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.technotrack.com.bd$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
